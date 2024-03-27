@@ -1,3 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
 body {
     background-color: #c396ae;
     }
+
+.card{
+    border: 1px solid #eae3e7;
+    width: 640px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+}   
+
+
+.outside,
+.inside {
+    border: 1px solid black;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+.inside{
+    left: 50.1%;
+}
+
+.outside{
+
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+}
+
+.front{
+    background-color: #f6f2f2;
+}
+.back{
+    transform: rotateY(180deg);
+    background : linear-gradient(to left, #e0e0e0, #ffffff 30%)
+}
