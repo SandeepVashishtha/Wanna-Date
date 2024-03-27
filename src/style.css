@@ -139,3 +139,25 @@
     font-size: 120px;
     line-height: 120px;
   }
+
+.front-page{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 80%;
+    width: 80%;
+    background-color: transparent;
+}
+
+.Text{
+    font-size: medium;
+    font-style: italic;
+    color: #7b180d;
+}
+
+.hiee {
+    font-size: 30px;;
+    color: #d267a5;
+    font-style: italic;
+    font-family: "cursive" 'Lucida handwriting';
+}
