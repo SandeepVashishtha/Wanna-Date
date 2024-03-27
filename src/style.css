@@ -2,166 +2,140 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
   }
   body {
-    background-color: #f1d632;
+    background-color: #fdbf00;
   }
-  .container {
-    height: 100vh;
-    width: 31.25em;
-  }
-  .center,
-  .container * {
+  .card {
+    width: 640px;
+    height: 400px;
     position: absolute;
     margin: auto;
     left: 0;
     right: 0;
-  }
-  .layer-1 {
-    background-color: #367bd0;
-    height: 7.5em;
-    width: 21.87em;
-    top: -7.5em;
-    background-size: 1.56em 9.37em;
-    background-position: 0 -1.25em;
-    background-image: radial-gradient(
-      circle at 0.78em 1em,
-      #f5f5f5 1.25em,
-      transparent 1.3em
-    );
-    animation: fall-1 8s infinite;
-  }
-  @keyframes fall-1 {
-    20% {
-      transform: translateY(35.62em);
-    }
-    100% {
-      transform: translateY(35.62em);
-    }
-  }
-  .layer-1:before {
-    content: "";
-    position: absolute;
-    height: 1.25em;
-    width: 100%;
-    background-color: #f54597;
+    top: 0;
     bottom: 0;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    transition: 1s;
   }
-  .layer-1:after {
-    content: "";
+  .card:hover {
+    transform: rotate(-5deg);
+  }
+  .card:hover .outside {
+    transform: rotateY(-130deg);
+  }
+  .outside,
+  .inside {
+    height: 100%;
+    width: 50%;
     position: absolute;
-    height: 0.75em;
-    width: 0.75em;
-    background-color: #9a152b;
-    border-radius: 50%;
-    top: 2.81em;
-    left: 1.87em;
-    box-shadow: 3.12em 1.56em #f1663e, 5.31em -1em #f5e671, 9.37em 2.4em #9a152b,
-      12.5em -1.56em #f1663e, 14.68em 0 #f5e671, 18.75em 1.56em #9a152b;
+    left: 50.1%;
   }
-  .layer-2 {
-    height: 7.5em;
-    width: 15.62em;
-    background-color: #ff99b9;
-    top: -7.5em;
-    background-image: repeating-linear-gradient(
-      90deg,
-      transparent 0,
-      transparent 3.12em,
-      #ff4a83 3.12em,
-      #ff4a83 6.25em
-    );
-    animation: fall-2 8s infinite;
+  .inside {
+    background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
+    line-height: 3;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
   }
-  @keyframes fall-2 {
-    20% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(28.12em);
-    }
-    100% {
-      transform: translateY(28.12em);
-    }
+  .outside {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+    cursor: pointer;
   }
-  .layer-3 {
-    background-color: #9a202f;
-    height: 7.5em;
-    width: 9.37em;
-    top: -7.5em;
-    background-size: 1.56em 9.37em;
-    background-position: 0 -1.25em;
-    background-image: radial-gradient(
-      circle at 0.78em 1em,
-      #ffee8d 1.25em,
-      transparent 1.3em
-    );
-    animation: fall-3 8s infinite;
-  }
-  @keyframes fall-3 {
-    40% {
-      transform: translateY(0);
-    }
-    60% {
-      transform: translateY(20.62em);
-    }
-    100% {
-      transform: translateY(20.62em);
-    }
-  }
-  .layer-3:before {
-    position: absolute;
-    content: "";
-    height: 0.93em;
+  .front,
+  .back {
+    height: 100%;
     width: 100%;
-    top: 3.12em;
-    background-color: #ffee8d;
-  }
-  .layer-3:after {
     position: absolute;
-    content: "";
-    background-color: #f54597;
-    height: 1.25em;
-    width: 1.25em;
-    border-radius: 50%;
-    top: -1.25em;
-    left: 0.37em;
-    box-shadow: 1.87em 0 #f54597, 3.75em 0 #f54597, 5.62em 0 #f54597,
-      7.5em 0 #f54597;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+  }
+  .front {
+    background-color: #ffffff;
+  }
+  .back {
+    transform: rotateY(180deg);
+    background: linear-gradient(to left, #e7e7e7, #ffffff 30%);
+  }
+  .cake {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+  }
+  .top-layer,
+  .middle-layer,
+  .bottom-layer {
+    height: 80px;
+    width: 240px;
+    background-repeat: repeat;
+    background-size: 60px 100px;
+    background-position: 28px 0;
+    background-image: linear-gradient(
+        transparent 50px,
+        #fedbab 50px,
+        #fedbab 60px,
+        transparent 60px
+      ),
+      radial-gradient(circle at 30px 5px, #994c10 30px, #fcbf29 31px);
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    margin: auto;
+  }
+  .middle-layer {
+    transform: scale(0.85);
+    top: 6px;
+  }
+  .top-layer {
+    transform: scale(0.7);
+    top: 26px;
   }
   .candle {
-    height: 3.12em;
-    width: 0.75em;
-    background-color: #3aa2cf;
-    top: -3.12em;
-    border-radius: 0.12em 0.12em 0 0;
-    animation: fall-4 8s infinite;
-  }
-  @keyframes fall-4 {
-    60% {
-      transform: translateY(0);
-    }
-    80% {
-      transform: translateY(13.12em);
-    }
-    100% {
-      transform: translateY(13.12em);
-    }
+    height: 45px;
+    width: 15px;
+    background: repeating-linear-gradient(
+      45deg,
+      #fd3018 0,
+      #fd3018 5px,
+      #ffa89e 5px,
+      #ffa89e 10px
+    );
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 202px;
   }
   .candle:before {
-    position: absolute;
     content: "";
-    background-color: #f1af3f;
-    height: 1.25em;
-    width: 1.25em;
-    margin: -0.25em;
-    border-radius: 50% 50% 50% 0;
-    top: -1.3em;
-    transform: rotate(135deg);
-    animation: flame 2s infinite;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 48px;
+    transform: rotate(45deg);
+    left: -1px;
   }
-  @keyframes flame {
-    50% {
-      transform: scale(0.8) rotate(135deg);
-    }
+  .outside p {
+    font-size: 23px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 6px;
+    color: #000046;
+  }
+  .inside h1 {
+    font-size: 120px;
+    line-height: 120px;
   }
