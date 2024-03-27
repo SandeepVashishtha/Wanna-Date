@@ -161,3 +161,16 @@
     font-style: italic;
     font-family: "cursive" 'Lucida handwriting';
 }
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100; /* This makes the card take up the full height of the viewport */
+}
+
+@media (max-width: 600px) {
+  .card {
+      flex-direction: column;
+  }
+}
