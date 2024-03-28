@@ -138,3 +138,14 @@
   align-items: center;
   height: 100; /* This makes the card take up the full height of the viewport */
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fdbe0000;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+}
