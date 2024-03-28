@@ -140,15 +140,7 @@
 }
 
 @media (max-width: 600px) {
-  .parent {
-    margin-left: 10px;
-    margin-top: 20px;
-    height: 100%;
-    width: 100%;
-  }
-
   .card {
-    flex-direction: column;
-    height: auto; /* Adjust this as needed */
+      flex-direction: column;
   }
 }
