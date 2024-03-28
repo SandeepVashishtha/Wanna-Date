@@ -106,6 +106,16 @@
     font-family: "cursive" 'Lucida handwriting';
 }
 
+.front-sticker{
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  margin-left: 58px;
+  height: 70%;
+  width: 70%;
+  background-color: transparent;
+}
+
 .card {
   display: flex;
   justify-content: center;
