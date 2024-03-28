@@ -81,14 +81,15 @@
     line-height: 120px;
   }
 
-.front-page{
+.main-sticker{
     display: flex;
     justify-content: center;
     align-items: top;
-    margin-bottom: 78px;
+    margin-bottom: 80px;
+    margin-top: -40px;
     margin-left: 45px;
-    height: 75%;
-    width: 75%;
+    height: 78%;
+    width: 78%;
     background-color: transparent;
 }
 
