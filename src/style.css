@@ -85,15 +85,19 @@
     display: flex;
     justify-content: center;
     align-items: top;
-    height: 80%;
-    width: 80%;
+    margin-bottom: 78px;
+    margin-left: 45px;
+    height: 75%;
+    width: 75%;
     background-color: transparent;
 }
 
 .Text{
-    font-size: medium;
+    font-size: large;
+    margin-top: 28px;
     font-style: italic;
     color: #7b180d;
+    font-family:"cursive" 'Lucida handwriting';
 }
 
 .hiee {
@@ -113,6 +117,17 @@
   margin-left: 58px;
   height: 70%;
   width: 70%;
+  background-color: transparent;
+}
+
+.back-sticker{
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  margin-left: 39px;
+  margin-top: 58px;
+  height: 74%;
+  width: 74%;
   background-color: transparent;
 }
 
