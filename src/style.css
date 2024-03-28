@@ -144,8 +144,21 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #fdbe0000;
+  background-color: #d5b55a00;
   color: black;
   text-align: center;
   padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .column {
+    width: 50%;
+  }
 }
