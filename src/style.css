@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #fdbf00;
+  background-color: #df81d6;
   display: flex;
   height: 100vh;
   -webkit-user-select: none; /* Safari */
@@ -128,7 +128,7 @@ img{
 }
 
 .hiee {
-  font-size: calc(2vw + 10px);
+  font-size: calc(2vw + 3px);
   text-align: center;
   margin-top: 15%;
   color: #781a0c;
