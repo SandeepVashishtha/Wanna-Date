@@ -9,8 +9,14 @@ body {
   background-color: #fdbf00;
   display: flex;
   height: 100vh;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  
 }
-
+img{
+  pointer-events: none;
+}
 .card {
   display: flex;
   justify-content: center;
@@ -169,4 +175,5 @@ body {
   .column {
     width: 50%;
   }
+  
 }
