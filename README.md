@@ -2,7 +2,7 @@
 This project is a playful and interactive web application that presents a unique dating invitation. The main feature is a digital card that flips open to reveal a message asking the viewer, "Wanna Date?" when hovered over.
 
 
-![Screenshot one of the project](src/assets/Screenshot-one.png)
+![Screenshot one of the project](src/assets/Screeshot-one.png)
 ![Screenshot two the project](src/assets/Screenshot-two.png)
 
 
