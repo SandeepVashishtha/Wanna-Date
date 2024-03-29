@@ -1,142 +1,150 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  body {
-    background-color: #fdbf00;
-  }
-  .card {
-    width: 640px;
-    height: 400px;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    -webkit-perspective: 1200px;
-    perspective: 1200px;
-    transition: 1s;
-  }
-  .card:hover {
-    transform: rotate(-5deg);
-  }
-  .card:hover .outside {
-    transform: rotateY(-130deg);
-  }
-  .outside,
-  .inside {
-    height: 100%;
-    width: 50%;
-    position: absolute;
-    left: 50.1%;
-  }
-  .inside {
-    background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
-    line-height: 3;
-    padding: 0 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    left: 50%;
-  }
-  .outside {
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    z-index: 1;
-    transform-origin: left;
-    transition: 2s;
-    cursor: pointer;
-  }
-  .front,
-  .back {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transform: rotateX(0deg);
-  }
-  .front {
-    background-color: #ffffff;
-  }
-  .back {
-    transform: rotateY(180deg);
-    background: linear-gradient(to left, #e7e7e7, #ffffff 30%);
-  }
-  .outside p {
-    font-size: 23px;
-    text-transform: uppercase;
-    margin-top: 30px;
-    text-align: center;
-    letter-spacing: 6px;
-    color: #000046;
-  }
-  .inside h1 {
-    font-size: 120px;
-    line-height: 120px;
-  }
-
-.main-sticker{
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    margin-bottom: 80px;
-    margin-top: -40px;
-    margin-left: 45px;
-    height: 72%;
-    width: 72%;
-    background-color: transparent;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.Text{
-    font-size: large;
-    margin-top: 28px;
-    font-style: italic;
-    color: #7b180d;
-    font-family:"cursive" 'Lucida handwriting';
-}
-
-.hiee {
-    font-size: 25px;
-    text-align: center;
-    margin-top: 60px;
-    margin-left: 15px;
-    color: #781a0c;
-    font-style: italic;
-    font-family: "cursive" 'Lucida handwriting';
-}
-
-.front-sticker{
+body {
+  background-color: #fdbf00;
   display: flex;
-  justify-content: center;
-  align-items: top;
-  margin-left: 58px;
-  height: 70%;
-  width: 70%;
-  background-color: transparent;
-}
-
-.back-sticker{
-  display: flex;
-  justify-content: center;
-  align-items: top;
-  margin-left: 39px;
-  margin-top: 58px;
-  height: 74%;
-  width: 74%;
-  background-color: transparent;
+  height: 100vh;
 }
 
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100; /* This makes the card take up the full height of the viewport */
+  max-height: 66%;
+  max-width: 100%;
+  aspect-ratio: 1.6;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+  transition: 1s;
+}
+
+.card:hover {
+  transform: rotate(-5deg);
+}
+
+.card:hover .outside {
+  transform: rotateY(-130deg);
+}
+
+.outside,
+.inside {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  left: 50.1%;
+}
+
+.inside {
+  background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  left: 50%;
+}
+
+.outside {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  z-index: 1;
+  transform-origin: left;
+  transition: 2s;
+  cursor: pointer;
+}
+
+.front,
+.back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+}
+
+.front {
+  background-color: #ffffff;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background: linear-gradient(to left, #e7e7e7, #ffffff 30%);
+}
+
+.outside p {
+  font-size: 23px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 6px;
+  color: #000046;
+}
+
+.inside h1 {
+  font-size: 120px;
+  line-height: 120px;
+}
+
+.main-sticker {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20%;
+  margin-top: -40px;
+  margin-left: 45px;
+  height: 72%;
+  width: 72%;
+  background-color: transparent;
+}
+
+.Text {
+  display: flex;
+  font-size: large;
+  margin-top: 20%;
+  font-style: italic;
+  color: #7b180d;
+  font-family: "cursive" 'Lucida handwriting';
+}
+
+.hiee {
+  font-size: calc(2vw + 10px);
+  text-align: center;
+  margin-top: 15%;
+  color: #781a0c;
+  font-style: italic;
+  font-family: "cursive" 'Lucida handwriting';
+}
+
+.front-sticker {
+  display: flex;
+  justify-content: center;
+  height: 70%;
+  width: 70%;
+  background-color: transparent;
+}
+
+.back-sticker {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+  height: 74%;
+  width: 74%;
+  background-color: transparent;
 }
 
 .footer {
