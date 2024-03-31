@@ -166,47 +166,6 @@ img{
   justify-content: center;
   align-items: center;
 }
-.yesno {
-  display: flex;
-  margin-bottom: 70px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10%;
-  color: aquamarine;
-  size-adjust: 10px;
-
-}
-
-#yes {
-  position: absolute;
-  margin-left: -30%;
-}
-
-#no {
-  position: absolute;
-  margin-left: 12%;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  margin-left: 40px;
-}
-
-.btn {
-  background-color: #7c0d1b;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: -47px 5px;
-  border: none;
-  border-radius: 12px;
-}
 
 .column {
   width: 100%;
