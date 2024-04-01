@@ -17,7 +17,7 @@ body {
 img{
   pointer-events: none;
 }
-.cards {
+.card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,11 +35,11 @@ img{
   transition: 1s;
 }
 
-.cards:hover {
+.card:hover {
   transform: rotate(-5deg);
 }
 
-.cards:hover .outside {
+.card:hover .outside {
   transform: rotateY(-130deg);
 }
 
@@ -177,18 +177,3 @@ img{
   }
   
 }
-
-@media (max-width: 279px) {
-  p {
-    font-size:small;
-  }
-  
-}
-
-@media (max-width: 214px) {
-  p {
-    font-size: x-small;
-  }
-  
-}
-
