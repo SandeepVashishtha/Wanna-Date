@@ -17,7 +17,7 @@ body {
 img{
   pointer-events: none;
 }
-.card {
+.cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,11 +35,11 @@ img{
   transition: 1s;
 }
 
-.card:hover {
+.cards:hover {
   transform: rotate(-5deg);
 }
 
-.card:hover .outside {
+.cards:hover .outside {
   transform: rotateY(-130deg);
 }
 
@@ -85,7 +85,7 @@ img{
 }
 
 .front {
-  background-color: #ffffff;
+  background-color: #9f6464;
 }
 
 .back {
@@ -177,3 +177,18 @@ img{
   }
   
 }
+
+@media (max-width: 279px) {
+  p {
+    font-size:small;
+  }
+  
+}
+
+@media (max-width: 214px) {
+  p {
+    font-size: x-small;
+  }
+  
+}
+
