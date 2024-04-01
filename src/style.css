@@ -229,3 +229,41 @@ img{
       font-size: 14px;
   }
 }
+
+/* CSS for Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1224px) {
+  .btn {
+    padding: 15px 25px;
+    font-size: 14px;
+}
+}
+
+/* CSS for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  .btn {
+  padding: 12px 20px;
+  margin: 30px;
+  font-size: 13px;
+  
+}
+}
+
+/* CSS for Mobile Devices in Landscape Orientation */
+@media only screen and (max-width: 375px) {
+  .btn {
+    padding: 10px 16px;
+    margin: 50px;
+    font-size: 13px;
+    
+  }
+}
+
+/* CSS for Mobile Devices in Portrait Orientation */
+@media only screen and (max-width: 320px) {
+  .btn {
+    padding: 8px 12px;
+    margin: 70px;
+    font-size: 13px;
+    
+  }
+}
