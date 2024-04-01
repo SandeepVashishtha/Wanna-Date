@@ -28,15 +28,15 @@
         }
       </style>
     <div class="card">
-      <div class="outside">
-        <div class="front">
+     <div class="outside">
+         <div class="front">
           <div class="hiee">
             <p1>Hiee Pumpkin !!</p1>
           </div>
           <div class="front-sticker">
             <img src="src\assets\front-stk.webp" alt="Hiee Pumpkin !!">
           </div>
-        </div>
+        </div> 
         <div class="back">
           <div class="back-sticker">
             <img src="src\assets\back.webp" alt="Phool !!">
@@ -50,6 +50,19 @@
         <div class="main-sticker">
             <img src="src\assets\main-stk.webp" alt="Wanna Date?">
         </div>
+        <div class = "buttons">
+          <button class="btn" id = "yesButton" onclick="nextPage('yes')">Yes</button>
+          <button class="btn" id="noButton" onclick="nextPage('no')">No</button> 
+          <script>
+            function nextPage(choice) {
+                if (choice === 'yes') {
+                    window.location.href = "src/yes.html";
+                } else if (choice === 'no') {
+                    window.location.href = "src/no.html";
+                }
+            }
+        </script>
+      </div>
       </div>
     </div> 
         </div>
