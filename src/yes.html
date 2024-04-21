@@ -7,12 +7,25 @@
       margin: 0;
       top: 0;
       left: 0;
+      z-index: -1;
       width: 100%;
       height: 100%;
       background: white;
       animation-name: backdiv;
       animation-duration: 1s;
       animation-iteration-count: infinite;
+    }
+    h1 {
+      position: absolute;
+      margin: auto;
+      top: 150px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      
+      height: 50px;
+      width: fit-content;
+  
     }
   
     .heart {
@@ -29,6 +42,11 @@
       animation-name: beat;
       animation-duration: 1s;
       animation-iteration-count: infinite;
+    }
+    canvas{
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
     }
     .heart:after {
       background-color: red;
@@ -76,5 +94,8 @@
   </head>
   <body>
   <div class="back"></div>
+  <h1>It's a date</h1>
   <div class="heart"></div>
+  <canvas id="confeti" width="300" height="300" class="active"></canvas>
+  <script src="yes.js"></script>
   </body>

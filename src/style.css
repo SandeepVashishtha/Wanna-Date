@@ -12,9 +12,9 @@ body {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
-  
+  overflow: hidden;
 }
-img{
+img {
   pointer-events: none;
 }
 .card {
@@ -23,11 +23,12 @@ img{
   align-items: center;
   max-height: 66%;
   max-width: 100%;
+
   aspect-ratio: 1.6;
   position: absolute;
   margin: auto;
   left: 0;
-  right: 0;
+  right: 30px;
   top: 0;
   bottom: 0;
   -webkit-perspective: 1200px;
@@ -126,7 +127,7 @@ img{
   margin-top: -95%;
   font-style: italic;
   color: #7b180d;
-  font-family: "cursive" 'Lucida handwriting';
+  font-family: "cursive" "Lucida handwriting";
 }
 
 .hiee {
@@ -135,7 +136,7 @@ img{
   margin-top: 15%;
   color: #781a0c;
   font-style: italic;
-  font-family: "cursive" 'Lucida handwriting';
+  font-family: "cursive" "Lucida handwriting";
 }
 
 .front-sticker {
@@ -189,7 +190,7 @@ img{
 }
 
 .btn {
-  background-color: #FFB6C1;
+  background-color: #ffb6c1;
   color: white;
   padding: 12px 30px;
   text-align: center;
@@ -209,24 +210,22 @@ img{
   .column {
     width: 50%;
   }
-  
 }
 
 @media only screen and (max-width: 320px) and (max-height: 568px) {
   body {
-      height: 100vh;
+    height: 100vh;
   }
   .btn {
-      padding: 10px 18px;
-      font-size: 12px;
+    padding: 10px 18px;
+    font-size: 12px;
   }
 }
 
 @media only screen and (max-width: 414px) and (max-height: 736px) {
-
   .btn {
-      padding: 15px 25px;
-      font-size: 14px;
+    padding: 15px 25px;
+    font-size: 14px;
   }
 }
 
@@ -235,17 +234,16 @@ img{
   .btn {
     padding: 15px 25px;
     font-size: 14px;
-}
+  }
 }
 
 /* CSS for Mobile Devices */
 @media only screen and (max-width: 768px) {
   .btn {
-  padding: 12px 20px;
-  margin: 30px;
-  font-size: 13px;
-  
-}
+    padding: 12px 20px;
+    margin: 30px;
+    font-size: 13px;
+  }
 }
 
 /* CSS for Mobile Devices in Landscape Orientation */
@@ -254,7 +252,6 @@ img{
     padding: 10px 16px;
     margin: 50px;
     font-size: 13px;
-    
   }
 }
 
@@ -264,6 +261,5 @@ img{
     padding: 8px 12px;
     margin: 70px;
     font-size: 13px;
-    
   }
 }
